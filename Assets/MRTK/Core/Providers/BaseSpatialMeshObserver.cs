@@ -69,6 +69,7 @@ namespace Microsoft.MixedReality.Toolkit.SpatialAwareness
             RecalculateNormals = profile.RecalculateNormals;
             TrianglesPerCubicMeter = profile.TrianglesPerCubicMeter;
             VisibleMaterial = profile.VisibleMaterial;
+            PhysicsMaterial = profile.PhysicsMaterial;
         }
 
         private static readonly ProfilerMarker ApplyUpdatedMeshDisplayOptionPerfMarker = new ProfilerMarker("[MRTK] BaseSpatialMeshObserver.ApplyUpdatedMeshDisplayOption");
@@ -281,6 +282,7 @@ namespace Microsoft.MixedReality.Toolkit.SpatialAwareness
             }
         }
 
+
         private Material visibleMaterial = null;
 
         /// <inheritdoc />
@@ -300,6 +302,8 @@ namespace Microsoft.MixedReality.Toolkit.SpatialAwareness
                 }
             }
         }
+		
+		public PhysicMaterial PhysicsMaterial  { get; private set; }
 
         #endregion IMixedRealitySpatialMeshObserver Implementation
     }

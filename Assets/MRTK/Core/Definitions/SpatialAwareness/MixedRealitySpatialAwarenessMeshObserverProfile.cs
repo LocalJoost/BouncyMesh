@@ -83,6 +83,13 @@ namespace Microsoft.MixedReality.Toolkit.SpatialAwareness
         /// </summary>
         public Material OcclusionMaterial => occlusionMaterial;
 
+        [SerializeField] 
+        [Tooltip("Optional physics material to apply to spatial mesh")]
+        private PhysicMaterial physicsMaterial;
+
+        public PhysicMaterial PhysicsMaterial => physicsMaterial;
+
+
         #endregion IMixedRealitySpatialAwarenessMeshObserver settings
     }
 }
