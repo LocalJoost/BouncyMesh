@@ -26,7 +26,7 @@ public class BallLauncher : MonoBehaviour
 #if UNITY_EDITOR
         // When running in editor, check if there's a fixed aiming point
         // so the effects of just changing the parameters of the physical
-        // material (in stead of also moving and rotating the camera) can be seen.
+        // material (in stead of also moving and rotating the camera) can be observed.
         if (aimingPoint != null)
         {
             // Spawn 0.5m from the camera in direction of fixed aiming point
